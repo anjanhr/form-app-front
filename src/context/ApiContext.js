@@ -16,7 +16,7 @@ export const ApiProvider = ({ children }) => {
   const fetchData = useCallback(async () => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/form/fetch`
+        `https://form-app-back.onrender.com/form/fetch`
       );
       const responseData = await response.json();
       if (!response.ok)
@@ -34,7 +34,7 @@ export const ApiProvider = ({ children }) => {
   const createData = async (formData) => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/form/add`,
+        `https://form-app-back.onrender.com/form/add`,
         {
           method: "POST",
           headers: {
@@ -57,7 +57,7 @@ export const ApiProvider = ({ children }) => {
   const updateData = async (id, formData) => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/form/modify/${id}`,
+        `https://form-app-back.onrender.com/form/modify/${id}`,
         {
           method: "PUT",
           headers: {
@@ -83,7 +83,7 @@ export const ApiProvider = ({ children }) => {
   const deleteData = async (id) => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_API_URL}/api/form/destroy/${id}`,
+        `https://form-app-back.onrender.com/form/destroy/${id}`,
         {
           method: "DELETE",
         }
