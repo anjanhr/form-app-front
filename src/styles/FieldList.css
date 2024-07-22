@@ -1,0 +1,47 @@
+.field-list-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.field-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 0px 3px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.field-item input {
+  flex: 1;
+  border: none;
+  background: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.field-item img {
+  margin-left: 10px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .field-list-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .field-item {
+    padding: 10px;
+  }
+
+  .field-item img {
+    width: 16px;
+    height: 16px;
+  }
+}

@@ -1,0 +1,25 @@
+.field-input {
+  flex: 1;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.field-title {
+  text-transform: uppercase;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .field-input {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .field-title {
+    font-size: 14px;
+  }
+}

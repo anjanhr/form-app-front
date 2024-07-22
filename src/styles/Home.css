@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-btn {
+  background-color: #efdeaa;
+  border: 1px solid #200606;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.create-btn:hover {
+  background-color: #e8c661;
+  cursor: pointer;
+}
+
+.form-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-item {
+  width: calc(40% - 10px);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.form-item p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.form-item button {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-item button.view-btn {
+  background-color: #2175cd;
+}
+
+.form-item button.view-btn:hover {
+  background-color: #0056b3;
+}
+
+.form-item button.edit-btn {
+  background-color: #24b817;
+}
+
+.form-item button.edit-btn:hover {
+  background-color: #067120;
+}
+
+.form-item button.delete-btn {
+  background-color: #dc3545;
+}
+
+.form-item button.delete-btn:hover {
+  background-color: #b90e1f;
+}
+
+.message {
+  font-style: italic;
+  color: #888;
+}
